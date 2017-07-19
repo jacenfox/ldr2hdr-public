@@ -15,10 +15,10 @@ For more details, please see our project webpage: http://vision.gel.ulaval.ca/~j
 ## Getting started
 Execute the `ldr2hdr.py` to generate HDR image.
 
-Download the data and model from our [project webpage](http://vision.gel.ulaval.ca/~jflalonde/projects/learningHDR.)
-The provided data contains all the data we are using in our training and test. To train the domain adaptation model, you may need to download the [SUN360 dataset](http://vision.princeton.edu/projects/2012/SUN360/).
+Download the data and model from our [project webpage](http://vision.gel.ulaval.ca/~jflalonde/projects/learningHDR). Place the model in `./model' folder.
+The provided data contains all the LDR and HDR images used in the training and test. 
+You may also need to download the [SUN360 dataset](http://vision.princeton.edu/projects/2012/SUN360/) to train the domain adaptation model. Example images can be found in the `./examples` folder which have been aligned by centering the sun.
 
-The images have been aligned by centering the sun. Place the model in `./model' folder.
 
 ## Requirements
 Our model is trained with [TensorFlow](https://www.tensorflow.org/); and [OpenEXR](http://www.openexr.com/) is used to write HDR images.
