@@ -1,0 +1,3 @@
+The provided images in this folder are from SUN360 dataset, which have been processed by rotating the sun.
+Our network never saw these images in training phase.
+
