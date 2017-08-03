@@ -7,7 +7,7 @@ This code implements the algorithm introduced in:
 
 This code takes as input a single LDR omnidirectional panorama, and converts it to HDR automatically.
 
-For more details, please see our project webpage: http://vision.gel.ulaval.ca/~jflalonde/projects/learningHDR.
+For more details, please see our project webpage: http://www.jflalonde.ca/projects/learningHDR.
 
 *Important*: if you use this code, please cite the paper above!
 
@@ -15,7 +15,7 @@ For more details, please see our project webpage: http://vision.gel.ulaval.ca/~j
 ## Getting started
 Execute the `ldr2hdr.py` to generate HDR image.
 
-Download the data and model from our [project webpage](http://vision.gel.ulaval.ca/~jflalonde/projects/learningHDR). Place the model in `./model` folder.
+Download the data from our [project webpage](http://www.jflalonde.ca/projects/learningHDR).
 The provided data contains all the LDR and HDR images used in the training and test. 
 You may also need to download the [SUN360 dataset](http://vision.princeton.edu/projects/2012/SUN360/) to train the domain adaptation model. Example images can be found in the `./examples` folder which have been aligned by centering the sun.
 
