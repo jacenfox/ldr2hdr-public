@@ -1,0 +1,2 @@
+model_checkpoint_path: "./ldr2hdr.model"
+all_model_checkpoint_paths: "./ldr2hdr.model"
