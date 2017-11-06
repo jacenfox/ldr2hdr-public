@@ -1,3 +1,4 @@
-The provided images in this folder are from SUN360 dataset, which have been processed by rotating the sun.
+The provided images (pano_*.jpg) in this folder are from SUN360 dataset, which have been processed by rotating the sun.
 Our network never saw these images in training phase.
+An example image (ricoh.jpg) captured with thetaS is pre-rotated by computing the center of the largest saturated region.
 

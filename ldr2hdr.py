@@ -26,7 +26,7 @@ class LDR2HDR(object):
         if self.sess is None:
             self.sess = tf.Session(config=tf.ConfigProto(log_device_placement=False))
 
-        self.model_path = './model'
+        self.model_path = './model_DomainAdapt'  # Try the finetune model to get best performance on thetaS images
 
         self.fname_model = self._locateModel(self.model_path)
         self._load()
