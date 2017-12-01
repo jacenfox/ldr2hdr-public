@@ -19,7 +19,7 @@ Download the data from our [project webpage](http://www.jflalonde.ca/projects/le
 The provided data contains all the LDR and HDR images used in the training and test. 
 You may also need to download the [SUN360 dataset](http://vision.princeton.edu/projects/2012/SUN360/) to train the domain adaptation model. Example images can be found in the `./examples` folder which have been aligned by centering the sun.
 
-The network is defined in `ldr2hdr_net.py`. Two pre-trained models are also provided in the `modeo_*` folder.
+The network is defined in `ldr2hdr_net.py`. Two pre-trained models are also provided in the `model_*` folder.
 
 ## Requirements
 Our model is trained with [TensorFlow](https://www.tensorflow.org/); and [OpenEXR](http://www.openexr.com/) is used to write HDR images.
