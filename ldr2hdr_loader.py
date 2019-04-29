@@ -24,7 +24,7 @@ class LDR2HDR_Loader():
         '''
         self.input_ims = input_ims
         # or you could get the sun elevation directly from the network. See the init_input_output()
-        feed_dict = {self._isTraining: False, self.input: input_ims}
+        feed_dict = {self._isTraining: False, self.input: input_ims, self.keep_prob: 1}
         if self.imsize is not None:
             feed_dict[self.imsize] = input_ims.shape[1:3]
         pred, fc = self.sess.run([self.output, self.fc], feed_dict)
@@ -53,6 +53,7 @@ class LDR2HDR_Loader():
         self.sun = self.get_ops('SunPosition/fc5/activation')[-1]  # this branch directly output the sun elevation
         self.input = self.get_ops('InputImage')[0]
         self._isTraining = self.get_ops('isTraining')[0]
+        self.keep_prob = self.get_ops('keep_prob')[-1]  # keep_prob in the drop_out layer
         try:
             self.imsize = self.get_ops('imsize')[0]
         except:
